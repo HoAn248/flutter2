@@ -12,7 +12,9 @@ class Comments extends StatelessWidget {
         Positioned(
           right: 0,
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: Icon(
               Icons.close,
             ),
@@ -49,23 +51,57 @@ class Comments extends StatelessWidget {
           top: 120,
           height: 500,
           width: MediaQuery.of(context).size.width,
-          child: SizedBox(
+          child: Container(
+            padding: EdgeInsets.all(20),
             width: 300,
             child: ListView(
               children: [
-                Container(
-                  height: 300,
-                  color: Colors.amber,
-                  child: const Text('1'),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  height: 300,
-                  color: Colors.amber,
-                  child: const Text('2'),
-                ),
+                for (int i = 0; i < 10; i++)
+                  Container(
+                    // height: 60,
+                    // color: Colors.amber,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 30,
+                          width: 30,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/avt.jpg'),
+                              fit: BoxFit.cover, //change image fill type
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: MediaQuery.of(context).size.width - 120,
+                          // color: Colors.red,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Ho_Duc_An'),
+                              Text('So good!'),
+                            ],
+                          ),
+                        ),
+                        Container(
+                            child: Column(
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Image.asset(
+                                'assets/images/heartComment.png',
+                                width: 30,
+                              ),
+                            ),
+                            Text('800'),
+                          ],
+                        )),
+                      ],
+                    ),
+                  ),
               ],
             ),
           ),

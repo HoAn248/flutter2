@@ -1,3 +1,6 @@
+import 'package:basic_dart/Pages/Me/myprofile.dart';
+import 'package:basic_dart/Pages/SearchFriends/searchFriends.dart';
+import 'package:basic_dart/Pages/inbox/inbox.dart';
 import 'package:flutter/material.dart';
 
 class Flooter extends StatelessWidget {
@@ -41,7 +44,14 @@ class Flooter extends StatelessWidget {
           Container(
             width: 70,
             child: FlatButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SearchFriends(),
+                  ),
+                );
+              },
               child: Column(
                 children: [
                   Image.asset(
@@ -83,7 +93,19 @@ class Flooter extends StatelessWidget {
           Container(
             width: 70,
             child: FlatButton(
-              onPressed: () {},
+              // onPressed: () => showModalBottomSheet(
+              //   isScrollControlled: true,
+              //   context: context,
+              //   builder: (context) => Inbox(),
+              // ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Inbox(),
+                  ),
+                );
+              },
               child: Column(
                 children: [
                   Image.asset(
@@ -104,7 +126,14 @@ class Flooter extends StatelessWidget {
           Container(
             width: 70,
             child: FlatButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Me(),
+                  ),
+                );
+              },
               child: Column(
                 children: [
                   Image.asset(

@@ -73,6 +73,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: Flooter(),
       backgroundColor: Colors.black87,
       body: Stack(
         children: [
@@ -89,7 +90,6 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: Flooter(),
     );
   }
 }

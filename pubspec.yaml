@@ -72,21 +72,44 @@ flutter:
     - assets/images/message.png
     - assets/images/share.png
     - assets/images/tones.png
+    - assets/images/heartComment.png
+    - assets/images/avt.jpg
+    - assets/images/WhatsApp.png
+    - assets/images/MessageLogo.png
+    - assets/images/sms.png
+    - assets/images/Messenger.png
+    - assets/images/Instagram.png
+    - assets/images/Report.png
+    - assets/images/NotInterested.png
+    - assets/images/SaveVideo.png
+    - assets/images/Duet.png
+    - assets/images/Favorites.png
+    - assets/images/leftArrow.png
+    - assets/images/VideocameraIcon.png
+    - assets/images/Bookmark.png
+    - assets/images/ShareIcon.png
+    - assets/images/MessageIcon.png
+    - assets/images/send.png
+    - assets/images/TabsIcon.png
+    - assets/images/HeartHideStrokeIcon.png
+    - assets/images/AddAccountIcon.png
+    - assets/images/MessageBg.png
+    - assets/images/MenuIcon.png
+    - assets/images/addIcon.png
+    - assets/images/ClipboardStrokeIcon.png
+    - assets/images/RightArrowIcon.png
+    - assets/images/VidecameraStrokeIcon.png
+    - assets/images/CameraStrokeIcon.png
+    - assets/images/ScannerIcon.png
+    - assets/images/InviteFriends.png
+    - assets/images/FindContacts.png
+    - assets/images/Facebook.png
     - assets/videos/1.mp4
     - assets/videos/2.mp4
     - assets/videos/3.mp4
     - assets/videos/4.mp4
     - assets/videos/5.mp4
     - assets/videos/6.mp4
-    - assets/videos/7.mp4
-    - assets/videos/8.mp4
-    - assets/videos/9.mp4
-    - assets/videos/10.mp4
-    - assets/videos/11.mp4
-    - assets/videos/12.mp4
-    - assets/videos/13.mp4
-    - assets/videos/14.mp4
-    - assets/videos/15.mp4
 
 
 

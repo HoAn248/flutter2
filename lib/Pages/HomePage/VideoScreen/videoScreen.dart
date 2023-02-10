@@ -20,7 +20,7 @@ class _VideoOnScreenState extends State<VideoOnScreen> {
   _VideoOnScreenState(this.currentVideo);
   bool _play = true;
   dynamic _playIcon = null;
-  late VideoPlayerController? _controller;
+  VideoPlayerController? _controller;
   Future<void>? _futureVideo;
   @override
   // assets/videos/1.mp4
@@ -30,7 +30,7 @@ class _VideoOnScreenState extends State<VideoOnScreen> {
     _controller = VideoPlayerController.asset(this.currentVideo["url"]);
     _futureVideo = _controller?.initialize();
     _controller?.setLooping(true);
-    _controller?.play();
+    // _controller?.play();
 
     super.initState();
   }

@@ -1,4 +1,5 @@
 import 'package:basic_dart/Pages/HomePage/VideoScreen/comments.dart';
+import 'package:basic_dart/Pages/HomePage/VideoScreen/share.dart';
 import 'package:flutter/material.dart';
 
 class NavRight extends StatelessWidget {
@@ -90,7 +91,17 @@ class NavRight extends StatelessWidget {
             child: Column(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () => showModalBottomSheet(
+                    isScrollControlled: true,
+                    // backgroundColor: Colors.amber,
+                    context: context,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(20),
+                      ),
+                    ),
+                    builder: (context) => Share(),
+                  ),
                   icon: Image.asset(
                     'assets/images/share.png',
                     width: 30,
